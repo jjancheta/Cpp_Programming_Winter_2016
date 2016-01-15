@@ -1,0 +1,23 @@
+Creating simple Console App using Visual Studio
+
+1. Open Visual Studio in your computer.
+2. Click File -> New -> Project or use the keyboard shortcut Ctrl+Shift+N.
+3. A new window will popup with the list of templates available and all depends
+   what languages has been added during the installation of Visual Studio.
+4. For our course, select and expand Visual C++ and click Win32.
+5. Select Win32 Console Application. Then click Browse button below the window to specify
+   the location where to save the project file.
+6. Change the filename of your project file on the Name field and uncheck Create directory for solution
+   and Add to source control (below Browse button) before clicking OK.
+7. After clicking OK, the Win32 Application Wizard will popup and click Next or Application Settings.
+8. Under Application settings, make sure that Console application is selected under Application type
+   and Empty project only is selected under Additional options. Click Finish.
+9. To add source and header files, right click Source Files or Header Files in Solution Explorer window 
+   and select Add -> New Item.  Depending what file you are adding, you need to select the type of file 
+   before typing the filename and click Add.
+10. Once codes were added either in your Source or Header Files, you can compile and run the program by 
+    clicking Debug and chose either Start Debugging (keyboard keyboard = F5) for line by line debugging or
+    Start without Debugging (keyboard shorcut = Ctrl+F5).
+
+
+	
