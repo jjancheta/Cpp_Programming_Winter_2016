@@ -35,14 +35,14 @@ int main(){
     cin >> bankCode >> branchCode >> accNumber;
     myNumber.name(name);
     myNumber.accountNumber(bankCode, branchCode, accNumber);
-    
     displayAccountNumber(&myNumber);
-
+ 
   } while (!myNumber.isValid()
     && cout << "Invalid account number, (999 999 9999), try again: ");
   cout << "Thank you!" << endl;
   return 0;
 }
+
 void displayAccountNumber(const AccountNumber* acc){
   acc->display();
   cout << "-------------" << endl;

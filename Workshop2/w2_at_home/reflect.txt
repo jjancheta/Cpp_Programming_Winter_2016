@@ -1,0 +1,50 @@
+1. Function overloading was used in the code.  The display() function was repeatedly defined and called with different arguments.
+   Each function has different implementation codes and being selected through a process called overload resolution based on 
+   the arguments being passed when invoked.
+
+	Examples:
+	
+	**function prototypes at the header file:**
+		
+	void display() const;
+	void display(bool display_name) const;
+	void display(bool display_name, bool display_number) const;
+
+	**function definitions at the implementation file:**
+	
+	void AccountNumber::display() const{
+		if (_validAccNumber){
+			displayName();
+			cout << ", ";
+			displayNumber();
+			cout << "\n";
+		}
+		else
+			cout << _name << " does not have a valid account number." << endl;
+
+	}
+
+	void AccountNumber::display(bool display_name) const{
+		if (_validAccNumber && !display_name){
+			displayNumber();
+			cout << "\n";
+		}
+		else
+			cout << _name << " does not have a valid account number." << endl;
+	}
+	
+	void AccountNumber::display(bool display_name, bool display_number) const{ 
+		if (_validAccNumber && display_name && !display_number){
+			displayName();
+			cout << "\n";
+		}
+		else if (_validAccNumber && !display_name && !display_number)
+			;
+		else
+			cout << _name << " does not have a valid account number." << endl;
+	}
+
+2. The printing of error messages are basically done or hidden at display() member functions.  In each display() member function, an if 
+   statement is present with a condition whether the data member _validAccNumber and other parameters has a true or false value.  
+   The value that _validAccNumber stored is supplied or returned by isValid() member function which checks first the values
+   entered by the user.

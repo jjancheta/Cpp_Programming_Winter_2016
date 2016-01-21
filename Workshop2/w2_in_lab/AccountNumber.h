@@ -4,8 +4,8 @@
 // Date 2016/01/14
 // Author   Ancheta, Jesus Jr.
 // Description
-// ?????????????????????
-//
+// This file declares predefined values and a class (AccountNumber) which
+// has private member variables and public member functions.
 //
 // Revision History
 ///////////////////////////////////////////////////////////
