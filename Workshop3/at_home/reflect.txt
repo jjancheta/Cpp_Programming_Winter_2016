@@ -1,0 +1,16 @@
+//ANCHETA, Jesus Jr  
+//ID# 017 433 152
+
+AT_HOME - Workshop3
+
+1. Deallocated dynamic memory can cause memory leaks when 
+   a pointer to a dynamic memory goes out of scope. 
+2. The two methods of formatting IO stream data are: 
+   1. by using <iostream> header file where manipulators don't take any arguments. ex. left
+   2. by using <iomanip> header file where manipulators take arguments. ex. setw(5)
+3. Dynamic memory is required in the main() function as we are not aware 
+   the exact number of days that every user of the program will input. 
+   Hence, we can only allocate memory that is needed at run-time when 
+   user will define how many days he/she required. 
+
+
