@@ -1,0 +1,24 @@
+// Workshop 4
+// ANCHETA, Jesus Jr
+// ID# 017 433 152
+
+
+1. Safe empty state is when data members of the class' objects were initialized to null, zeroes and false respectively.
+	a.) name_[0] = 0;
+		
+            code_[0] = 0;
+		
+	    year_ = 0;
+		
+	    semester_ = 0;
+		
+	    slot_ = 0;
+		
+	    enrolled_ = false;
+
+	b.) This state was selected because these are only values that can defined variables as null.
+
+2. Multiple constructors in the program can able to validates and set or passed the values to the 
+   data members of class' objects.  While calling the constructors at code of the client, you dont need
+   to call the set() function again as constructors are already link to set() function inside the
+   inside the implementation file.
