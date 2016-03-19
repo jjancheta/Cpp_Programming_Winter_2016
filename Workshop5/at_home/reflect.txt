@@ -1,0 +1,20 @@
+// ANCHETA, Jesus Jr
+// ID # 017 433 152
+// email:  JJANCHETA@myseneca.ca
+
+
+1. allocateAndCopy() function is being called from the read() function when user entered 
+   a correct format of input(e.g. Type, 999 9999).  Inside this function, it will validate first if the
+   the arguments passed by read() function are valid by calling the isValid() function (if the type is 
+   not null and the area and number are within limits).  If its a valid area, number and type or isValid() function
+   return a true value, it will copy the values of the arguments to the object's data members and allocateAndCopy()
+   function will return a true value to read() function.  
+
+   If isValid return a false value to allocateAndCopy(), it will not copy the values to the object's data members 
+   allocaAndCopy() pass the same a false value to read() and read() function will display several error messages 
+   and ask the user to input another phone number type.
+
+
+2. copy constructor and assignment operator prevent the system in creating a nameless object of a class. 
+   It safely copy values passed  to them by verifying first if its empty or the arguments is pointing to the same
+   address as the object before writing to the object's data members.

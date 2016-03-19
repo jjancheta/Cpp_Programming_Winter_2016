@@ -1,0 +1,25 @@
+//ANCHETA, JESUS JR
+//ID# 017 433 152
+
+
+1. Friend helper function is basically not a member of the class but they have a direct access
+   to the private members of the class which is very dangerous especially for data members as they can able to
+   modify or change the values. Its just like you giving a backdoor to access the private members of the class.
+
+2. Yes.
+
+	Account& Account::operator+(const Account& other){
+		
+             double balance;
+		
+             balance = balance_ + other.balance_)
+		
+             return Account(balance);       //creates a nameless object
+ using the constructor with 1 argument
+	}
+
+3. A nameless object is being created first using the constructor with 1 argument passing the value of 100.01.
+   Once created this nameless object, C will call the operator += and do the operation inside the function.
+   After which, the nameless object will become out of scope/die.  Then B object will call again the operator+= with
+   the new value of C and do the operation inside the function.  The function operator+= will return the new value
+   of B and then assign it to A. 	
