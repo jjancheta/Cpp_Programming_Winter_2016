@@ -10,14 +10,9 @@
 //
 // Revision History
 ///////////////////////////////////////////////////////////
-// Name					Date		          Reason
-//		
+// Name			Date		          Reason
+// 
 ///////////////////////////////////////////////////////////
-
-// Name: Ancheta, Jesus Jr.
-// ID #: 017 433 152
-// Email: jjancheta@myseneca.ca
-
 
 #include <iostream>
 using namespace std;

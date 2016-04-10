@@ -1,0 +1,35 @@
+//ANCHETA, Jesus Jr
+// 017 433 152
+// Workshop 10: At_home
+
+1. Templates are instantiated during compilation and can only be done when the arguments of the
+   template are identified.  If templates are in a cpp file, they will be compiled immediately 
+   without knowing what data type arguments will be passed to it.
+
+2. Universal polymorphism:
+        template <typename T1>
+	bool validate(T1 min, T1 max, T1* testValue, int x, bool* result){
+		int i;
+		int count = 0;
+		for (i = 0; i < x; i++){
+			result[i] = (testValue[i] >= min && max >= testValue[i]);
+			if (result[i]){
+				count++;
+			}
+		}
+		return count == x;
+	}
+
+    Ad-hoc polymorphism:
+	template <>
+	bool validate<char>(char min, char max, char* testValue, int x, bool* result){
+		int i;
+		int count = 0;
+		for (i = 0; i < x; i++){
+			result[i] = (toupper(testValue[i]) >= min && max >= toupper(testValue[i]));
+			if (result[i]){
+				count++;
+			}
+		}
+		return count == x;
+	}
