@@ -1,0 +1,22 @@
+//ANCHETA JESUS JR
+//ID 017 433 152
+
+1) Employee(){
+	empNo_ = 0;
+	name_ = ""
+
+}
+
+2) Employee(const char* givenName, const char* familyName, int empNo){
+	strcpy(name_, givenName);
+	strcat(name_, " ");
+	strcat(name_, familyName);
+	empNo_ = empNo;
+
+}
+
+3)bool isEmpty const(){
+	if (empNo == 0 || name_ == ""){
+		return true;
+	}
+}	

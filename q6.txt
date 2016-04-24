@@ -1,0 +1,25 @@
+//ANCHETA JESUS JR
+//017 433 152
+
+
+class Box: public Bottle{
+      int number_;       
+      Bottle* content;
+    public:
+      Box(int number, const char* contentName){
+          number_ = number;
+          delete[] content;
+          content = new Bottle[strlen(contentName)+1];
+          for (int i = 0; i < number_; i++){
+                   content[i] = contentName[i];
+          }
+      }
+      
+      ~Box{
+        delete[] content; 
+      }
+      
+      ostream& display(ostream& os){
+          return os << number_ << " Bottles of " << content.display();
+      }
+};   

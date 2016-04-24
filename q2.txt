@@ -1,0 +1,14 @@
+// ANCHETA, JESUS JR  
+
+char Mark::grade() const{
+	if(weightedMarK() > 80)
+		return 'A';
+	else if(weightedMarK() > 70)
+		return 'B';
+	else if(weightedMarK() > 60)
+		return 'C';
+	else if(weightedMarK() > 50)
+		return 'D';
+	else
+		return 'F';
+}

@@ -1,0 +1,34 @@
+// ANCHETA, Jesus Jr.
+// 017 433 152
+
+
+1./  ostream& operator << (ostream& ostr, const Vehicle& output){
+            return output.display(ostr);
+     }
+     
+     ostream& Vehicle::display(ostream& ostr) const{
+             ostr << "speed: " << speed_ << " km ";
+             return ostr;
+     }
+
+2./  class Car: public Vehicle{
+          int noOfPassengers_;
+      public:
+           Car(int noOfPassengers):Vehicle(120.0){ noOfPassengers_ = noOfPassengers;}
+           ostream& Car::display(ostream& ostr) const{
+                  Vehicle::display(ostr);
+                  ostr << "with " << noOfPassengers_ << " passengers";
+                  return ostr;
+           }
+
+3/  virtual ostream& operator << (ostream& ostr, const Vehicle& output){
+            return output.display(ostr);
+     }
+     
+     virtual ostream& Vehicle::display(ostream& ostr) const{
+             Vehicle::display(ostr);
+             Car::display(ostr);
+             return ostr;
+     }
+           
+          

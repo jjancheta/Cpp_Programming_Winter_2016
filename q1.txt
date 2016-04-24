@@ -1,0 +1,13 @@
+
+Name: Ancheta, Jesus Jr
+ID# : 017 433 152
+
+**1. Abstraction -  it separates the codes that can be seen by the user from the implementation code.
+1.  Encapsulation -  combining the logic and data together to form a program and hiding the implementation code from the user.
+2. Inheritance -  it allows us to define another class using  other class properties.
+3. Polymorphism  -  class member functions are defined with the same name but it function differently.
+
+4. Synergie - interrelationship of classes
+
+Class - is a design or idea.
+Object - is an instance of a class.
