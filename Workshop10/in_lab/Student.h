@@ -9,7 +9,11 @@ namespace sict{
     void set(int stno, const char* name);
   public:
     Student(int stno, const char* name = "no name");
+<<<<<<< HEAD
     Student(const Student& S) = delete;
+=======
+    Student(const Student& S);
+>>>>>>> 462f745acb960edd2a588aeb146f428a36c4dc0d
     Student& operator=(const Student& S) = delete;
     std::ostream& display(std::ostream& os)const;
     bool operator<=(const Student& S)const;
@@ -17,4 +21,8 @@ namespace sict{
     operator const char*()const;
   };
 }
+<<<<<<< HEAD
 #endif 
+=======
+#endif 
+>>>>>>> 462f745acb960edd2a588aeb146f428a36c4dc0d

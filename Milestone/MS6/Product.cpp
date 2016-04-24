@@ -128,10 +128,13 @@ namespace sict{
 	int Product::operator -= (int lessProductQty){
 		return  quantity_ -= lessProductQty; 
 	}
+<<<<<<< HEAD
 
 	bool Product::operator > (const Product& A) const{
 		return strcmp(name_, A.name()) > 0;
 	}
+=======
+>>>>>>> 462f745acb960edd2a588aeb146f428a36c4dc0d
 	
 	//Non-Member Operator
 	double operator+=(double& value, const Product& x){

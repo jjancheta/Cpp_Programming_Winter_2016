@@ -51,8 +51,11 @@ namespace sict{
 		bool operator == (const char* sku);
 		int operator += (int addProductQty);
 		int operator -= (int lessProductQty);
+<<<<<<< HEAD
 		bool operator > (const Product& A) const;
 	
+=======
+>>>>>>> 462f745acb960edd2a588aeb146f428a36c4dc0d
 		
 	};
 	

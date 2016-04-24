@@ -44,7 +44,11 @@ namespace sict{
 		int tempQuantity;
 		int tempQtyNeeded;
 
+<<<<<<< HEAD
 		file.getline(tempSku, MAX_SKU_LEN, ',');
+=======
+		file.getline(tempSku, MAX_SKU_LEN+1, ',');
+>>>>>>> 462f745acb960edd2a588aeb146f428a36c4dc0d
 		sku(tempSku);
 		file.getline(tempName, 1000, ',');
 		name(tempName);
@@ -165,5 +169,8 @@ namespace sict{
 		
 		return istr;
 	}
+<<<<<<< HEAD
 
+=======
+>>>>>>> 462f745acb960edd2a588aeb146f428a36c4dc0d
 }

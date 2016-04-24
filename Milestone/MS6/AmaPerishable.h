@@ -23,7 +23,10 @@ namespace sict{
 	  std::fstream& load(std::fstream& file);
 	  std::ostream& write(std::ostream& os, bool linear=true)const;
 	  std::istream& read(std::istream& istr);
+<<<<<<< HEAD
 	  AmaPerishable& operator=(const Product& x) const;
+=======
+>>>>>>> 462f745acb960edd2a588aeb146f428a36c4dc0d
   };
 }
 #endif
